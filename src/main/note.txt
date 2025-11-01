@@ -1,0 +1,11 @@
+Spring Security
+ Authentication (Login , Register )Who are you?
+ Authorization (Admin , Supervisor, User)What can you do?
+
+Spring Boot
+ - create Project
+    - Spring data JPA (java Persistance API)
+    - Spring Security
+    - Spring Web (MVC , Restful)
+    - Thymeleaf ( Template Rendering Engine)
+    - Lombok
