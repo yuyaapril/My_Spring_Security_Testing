@@ -45,7 +45,7 @@ public class SecurityConfig {
   @Bean
   public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
     return http
-        .csrf(AbstractHttpConfigurer:: disable)
+        .csrf(AbstractHttpConfigurer::disable)
         .formLogin(httpForm -> {
           httpForm.loginPage("/login").permitAll();
           httpForm.defaultSuccessUrl("/index");
