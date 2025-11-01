@@ -11,6 +11,9 @@
 <body>
   <h1>Login Page</h1>
   <img src="/images/my.png" alt="image error" width="50" height="50">
+  <div>
+    <p th:if="${param.error}" th:text="${session['SPRING_SECURITY_LAST_EXCEPTION'].message}"></p>
+  </div>
   <form action="/login" method="post">
     <label for="username">Username</label>
     <input type="text" name="username" id="username">
