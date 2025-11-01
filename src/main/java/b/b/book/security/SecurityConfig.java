@@ -48,6 +48,7 @@ public class SecurityConfig {
         .csrf(AbstractHttpConfigurer:: disable)
         .formLogin(httpForm -> {
           httpForm.loginPage("/login").permitAll();
+          httpForm.defaultSuccessUrl("/index");
         })
         .authorizeHttpRequests(registry -> {
           registry.requestMatchers("register","/css/**","/images/**","/ja/**").permitAll();

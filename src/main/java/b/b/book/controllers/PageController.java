@@ -30,7 +30,7 @@ public class PageController {
   public String register() {
       return "register";
   }
-   @GetMapping("/")
+   @GetMapping("/index")
    public String home() {
      return "home";
    }
@@ -48,7 +48,7 @@ public class PageController {
      AppUser user = new AppUser();
      user.setUsername(username);
      user.setEmail(email);
-     user.setPassword(password);
+     user.setPassword(passwordEncoder.encode(password));
 
      userRepo.save(user);
 
