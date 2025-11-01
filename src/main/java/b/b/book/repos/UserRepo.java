@@ -9,5 +9,5 @@ import b.b.book.models.AppUser;
 
 @Repository //@Autowired
 public interface UserRepo extends JpaRepository<AppUser, Long> {
-  Optional<AppUser> findByName(String username);
+  Optional<AppUser> findByUsername(String username);
 }
