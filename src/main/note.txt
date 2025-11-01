@@ -11,3 +11,15 @@ Spring Boot
     - Lombok
 
 Spring Security SecurityFilterChange Bean
+
+Model Repository > Login Machenism
+- User (AppUser)
+- UserRepo
+- Service
+- SecurityFilterChange 
+
+Getter methods >> 
+Class အတွင်းမှာရှိတဲ့ private variable ကို အပြင်ကနေ value ယူဖို့ သုံးတဲ့ method
+ 
+Setter methods >> 
+Class အတွင်းမှာရှိတဲ့ private variable ကို အပြင်ကနေ value ထည့်ပေးဖို့ (ပြင်ဖို့) သုံးတဲ့ method
